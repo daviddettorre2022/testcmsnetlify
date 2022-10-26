@@ -6,7 +6,7 @@ layout: 'base.njk'
 <div>
     <h2>Décoration</h2>
     <ul>
-        {%- for post in collections.decoration | reverse -%}
+        {%- for post in collections.decoration -%}
             {% include 'articlesblog.njk' %}
         {%- endfor -%}
     </ul>

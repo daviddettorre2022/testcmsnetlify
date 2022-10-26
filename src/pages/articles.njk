@@ -22,7 +22,7 @@ layout: 'base.njk'
 <div class="last-articles">
   <h2>Tous les Articles</h2>
   <ul>
-    {%- for post in collections.blog | reverse -%}
+    {%- for post in collections.blog -%}
       {% include 'articlesblog.njk' %}
     {%- endfor -%}
   </ul>
