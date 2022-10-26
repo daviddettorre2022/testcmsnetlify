@@ -1,0 +1,13 @@
+---
+title: Numerique
+layout: 'base.njk'
+---
+
+<div>
+    <h2>Numérique</h2>
+    <ul>
+        {%- for post in collections.numerique | reverse -%}
+            {% include 'articlesblog.njk' %}
+        {%- endfor -%}
+    </ul>
+</div>

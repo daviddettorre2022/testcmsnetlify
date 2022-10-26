@@ -1,0 +1,13 @@
+---
+title: Architecture
+layout: 'base.njk'
+---
+
+<div>
+    <h2>Architecture</h2>
+    <ul>
+        {%- for post in collections.architecture | reverse -%}
+            {% include 'articlesblog.njk' %}
+        {%- endfor -%}
+    </ul>
+</div>

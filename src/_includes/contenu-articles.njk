@@ -1,0 +1,60 @@
+---
+layout: 'base.njk'
+---
+
+<div class="box-contenu-articles">
+    <h1>
+        {{ title }}
+    </h1>
+    <img src="{{ image }}" alt="{{ imageAlt }}">
+        <div class="text-contenu-articles">
+            {{ content | safe }}
+        </div>
+        {% include 'getback.njk' %}
+        <a class="retour-liens" href="/pages/articles">
+            <svg
+                class="w-6 h-6"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>Blog</a>
+    </div>
+    <style>
+        .box-contenu-articles {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 0.25rem;
+        }
+        .text-contenu-articles p {
+            margin: 0.25rem 0 0.5rem;
+        }
+        .text-contenu-articles h2 {
+            margin: 1rem 0 0.25rem;
+        }
+        .box-contenu-articles img {
+            margin-top: 1.5rem;
+            max-width: 700px;
+            max-height: 350px;
+            border-radius: 0.1rem;
+        }
+        .retour-liens {
+            margin-top: 3rem;
+        }
+    }
+    @media(max-width: 500px) {
+        .box-contenu-articles {
+            gap: 0;
+        }
+        .box-contenu-articles img {
+            width: 100%;
+            height: 250px;
+        }
+    }
+    </style>

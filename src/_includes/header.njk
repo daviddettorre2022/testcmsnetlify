@@ -1,0 +1,34 @@
+<header>
+    <h1>Cms JAMstack</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/pages/articles/">Blog</a></li>
+            <li><a href="/pages/contact/">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<style>
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 2rem;
+        background-color: #e9edc9;
+        margin-bottom: 2rem;
+    }
+    header h1 {
+        margin-right: 3rem;
+    }
+    header nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+    @media(max-width: 900px) {
+        header {
+            padding: 1rem;
+        }
+    }
+</style>

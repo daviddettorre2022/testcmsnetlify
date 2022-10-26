@@ -1,0 +1,47 @@
+---
+title: Articles
+layout: 'base.njk'
+---
+
+<h2>Bienvenue sur mon blog</h2>
+<div>
+  <nav class="navflex">
+    <ul class="blognav">
+      <li>
+        <a href="/pages/numerique/">Numérique</a>
+      </li>
+      <li>
+        <a href="/pages/architecture/">Architecture</a>
+      </li>
+      <li>
+        <a href="/pages/decoration/">Décoration</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="last-articles">
+  <h2>Tous les Articles</h2>
+  <ul>
+    {%- for post in collections.blog | reverse -%}
+      {% include 'articlesblog.njk' %}
+    {%- endfor -%}
+  </ul>
+</div>
+<style>
+  .navflex {
+    margin-top: 2rem;
+  }
+  .blognav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  @media(max-width: 500px) {
+    .navflex {
+      background-color: #fff;
+      overflow: scroll;
+      margin-bottom: 1.5rem;
+    }
+  }
+</style>
