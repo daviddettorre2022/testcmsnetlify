@@ -10,17 +10,44 @@ layout: 'base.njk'
     <div class="text-contenu-articles">
         {{ content | safe }}
     </div>
-    <a class="retour-liens" href="/pages/articles">
-        <svg
-            class="w-6 h-6"
-            width="20"
-            height="20"
-            fill="none"
-            stroke="currentColor"
-            viewbox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-        </svg>Retour</a>
+    <div class="baklinks">
+        <a href="/pages/articles">
+            <svg width="20" height="20" viewbox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2 12.5V6H3V12.5C3 12.6326 3.05268 12.7598 3.14645 12.8536C3.24021 12.9473 3.36739 13 3.5 13H12.5C12.6326 13 12.7598
+                        12.9473 12.8536 12.8536C12.9473 12.7598 13 12.6326 13 12.5V6H14V12.5C14 12.8978 13.842 13.2794 13.5607 13.5607C13.2794
+                        13.842 12.8978 14 12.5 14H3.5C3.10218 14 2.72064 13.842 2.43934 13.5607C2.15804 13.2794 2 12.8978 2 12.5Z"
+                    fill="black"/>
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.29301 0.500001C7.48053 0.31253 7.73484 0.207214 8.00001 0.207214C8.26517 0.207214 8.51948 0.31253 8.70701
+                        0.500001L15.354 7.146C15.4479 7.23989 15.5006 7.36723 15.5006 7.5C15.5006 7.63278 15.4479 7.76011 15.354 7.854C15.2601
+                        7.94789 15.1328 8.00063 15 8.00063C14.8672 8.00063 14.7399 7.94789 14.646 7.854L8.00001 1.207L1.35401 7.854C1.26012
+                        7.94789 1.13278 8.00063 1.00001 8.00063C0.86723 8.00063 0.739893 7.94789 0.646006 7.854C0.552119 7.76011 0.499374 7.63278
+                        0.499374 7.5C0.499374 7.36723 0.552119 7.23989 0.646006 7.146L7.29301 0.500001Z"
+                    fill="black"/>
+            </svg>
+            Blog
+        </a>
+        <a href="/pages/{{ link }}/">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-tags"
+                viewbox="0 0 16 16">
+                <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0
+                    1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+                <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM1 7.086a1 1 0 0 0 .293.707L8.75
+                15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+            </svg>
+            {{ categorie }}
+        </a>
+    </div>
 </div>
 <style>
     .box-contenu-articles {
@@ -43,17 +70,22 @@ layout: 'base.njk'
         flex-direction: column;
         gap: 1rem;
     }
-    .retour-liens {
-        margin-top: 3rem;
+    .baklinks {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
     }
-}
-@media(max-width: 500px) {
-    .box-contenu-articles {
-        gap: 0;
+    .baklinks a {
+        display: flex;
+        gap: 0.25rem;
     }
-    .box-contenu-articles img {
-        width: 100%;
-        height: 250px;
+    @media(max-width: 500px) {
+        .box-contenu-articles {
+            gap: 0;
+        }
+        .box-contenu-articles img {
+            width: 100%;
+            height: 250px;
+        }
     }
-}
 </style>

@@ -1,0 +1,36 @@
+<div>
+    <nav class="navflex">
+        <ul class="blognav">
+            <li>
+                <a href="/pages/articles/">Blog</a>
+            </li>
+            <li>
+                <a href="/pages/numerique/">Numérique</a>
+            </li>
+            <li>
+                <a href="/pages/architecture/">Architecture</a>
+            </li>
+            <li>
+                <a href="/pages/decoration/">Décoration</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<style>
+    .navflex {
+        margin-top: 2rem;
+    }
+    .blognav {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    @media(max-width: 500px) {
+        .navflex {
+            background-color: #fff;
+            overflow: scroll;
+            margin-bottom: 1.5rem;
+        }
+    }
+</style>

@@ -5,6 +5,7 @@ layout: 'base.njk'
 
 <div>
     <h2>Architecture</h2>
+    {% include 'navigation.njk' %}
     <ul>
         {%- for post in collections.architecture | reverse -%}
             {% include 'articlesblog.njk' %}
