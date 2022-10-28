@@ -1,7 +1,7 @@
 ---
-title: Test 1 article architecture
+title: Article architecture_1
 description: Mon premier article sur l'architecture
-author: dav
+author: David
 categorie: Architecture
 link: architecture
 date: 2022-10-27T17:41:29.324Z
