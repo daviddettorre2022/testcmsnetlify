@@ -1,5 +1,5 @@
 ---
-title: Article Décoration 1
+title: Article Décoration_1
 description: Article sur la Déco
 author: David
 categorie: Décoration
