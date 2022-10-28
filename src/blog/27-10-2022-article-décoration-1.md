@@ -1,6 +1,6 @@
 ---
-title: Article Décoration_1
-description: Article sur la Déco
+title: Article décoration_1
+description: Mon premier article sur la Déco
 author: David
 categorie: Décoration
 link: decoration
