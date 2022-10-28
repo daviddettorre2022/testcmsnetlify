@@ -6,41 +6,45 @@
 html {
   overflow-x: hidden;
 }
+:root {
+  --bg-main: #d1f1f2;
+  --bg-cta: #158fbb;
+}
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.1rem;
-  background-color: #fefae0;
+  font-size: 1.123rem;
   line-height: 1.4;
   letter-spacing: 0.25px;
   overflow-x: hidden;
+  background-color: var(--bg-main);
 }
-
+main {
+  padding: 0 2rem;
+}
 li {
   list-style: none;
 }
-
 img {
   object-fit: cover;
 }
-
 a {
   text-decoration: none;
-  color: currentColor;
+  color: white;
   border-radius: 0.1rem;
   display: flex;
   align-items: center;
-  background-color: #ccd5ae;
   padding: 0.5rem 0.75rem;
   width: fit-content;
   border-bottom: 2px solid currentcolor;
+  background-color: var(--bg-cta);
 }
-
 small {
   font-size: 0.825rem;
 }
 
 @media (max-width: 900px) {
-  body {
-    font-size: 1.25rem;
+  main {
+    font-size: 1.5rem;
+    padding: 1rem;
   }
 }

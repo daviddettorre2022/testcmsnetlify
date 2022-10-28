@@ -3,6 +3,78 @@ title: Accueil
 layout: 'base.njk'
 ---
 
+<style>
+  .land {
+    max-width: 1111px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    margin: 5.5rem auto;
+    line-height: 1.3;
+  }
+  .land h2 {
+    font-size: 2.5rem;
+  }
+  .land img {
+    border-radius: 0.125rem;
+  }
+  .land-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .boxlinkland {
+    display: flex;
+    gap: 2rem;
+  }
+  .boxlinkland a {
+    padding: 1rem;
+    border-radius: 0.125rem;
+  }
+  .linkland {
+    border: inherit;
+    background-color: #e63946;
+    text-transform: uppercase;
+  }
+  .linklandtwo {
+    background-color: inherit;
+    color: #333;
+    border: solid 1px currentColor;
+  }
+  .logosites {
+    max-width: 1111px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #158fbb;
+    border-radius: 0.125rem;
+  }
+  @media(max-width:990px) {
+    .land {
+      margin: 0 auto 2rem;
+      flex-direction: column;
+    }
+    .land h2 {
+      font-size: 2rem;
+    }
+    .land img {
+      width: 400px;
+      height: 250px;
+    }
+    .land-text {
+      padding: 0.25rem;
+    }
+    .linkland {
+      font-size: 1.2rem;
+    }
+    .logosites {
+      padding: 1rem;
+    }
+  }
+</style>
 <div class="land">
   <div class="land-text">
     <section>
@@ -36,77 +108,7 @@ layout: 'base.njk'
   </div>
 </div>
 <div class="logosites">
-  <img src="\assets\img\11ty.png" alt="logo de 11ty" width="300" height="150">
-  <img src="\assets\img\github.png" alt="logo de github" width="300" height="150">
-  <img src="\assets\img\netlify.png" alt="logo de netlify" width="300">
+  <img src="\assets\img\11ty.png" alt="logo de 11ty" width="150">
+  <img src="\assets\img\gitlogo.png" alt="logo de github" width="125">
+  <img src="\assets\img\netlilogo.png" alt="logo de netlify" width="350">
 </div>
-<style>
-  .land {
-    max-width: 1111px;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    align-items: center;
-    margin: 5.5rem auto;
-    line-height: 1.3;
-  }
-  .land h2 {
-    font-size: 2.5rem;
-  }
-  .land img {
-    border-radius: 0.125rem;
-  }
-  .land-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .boxlinkland {
-    display: flex;
-    gap: 2rem;
-  }
-  .boxlinkland a {
-    padding: 1rem;
-    border-radius: 0.125rem;
-  }
-  .linkland {
-    border: inherit;
-    background-color: #ffa5a5;
-    text-transform: uppercase;
-  }
-  .linklandtwo {
-    background-color: inherit;
-    color: #333;
-    border: solid 1px currentColor;
-  }
-  .logosites {
-    max-width: 1111px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    background-color: #ccd5ae;
-    border-radius: 0.125rem;
-  }
-  @media(max-width:990px) {
-    .land {
-      margin: 0 auto 2rem;
-      flex-direction: column;
-    }
-    .land h2 {
-      font-size: 2rem;
-    }
-    .land img {
-      width: 400px;
-      height: 250px;
-    }
-    .land-text {
-      padding: 0.25rem;
-    }
-    .linkland {
-      font-size: 1.2rem;
-    }
-  }
-</style>
