@@ -1,6 +1,6 @@
 ---
 title: Article architecture num2
-description: Mon premier article architecture
+description: Mon deuxième article architecture
 author: David
 categorie: Architecture
 link: architecture
