@@ -1,7 +1,7 @@
 ---
-title: Test reverse architecture
+title: Article architecture_2
 description: Mon deuxieme article architecture
-author: dav
+author: David
 categorie: Architecture
 link: architecture
 date: 2022-10-27T17:46:39.666Z
