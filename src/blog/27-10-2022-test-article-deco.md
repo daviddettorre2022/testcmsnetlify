@@ -1,7 +1,7 @@
 ---
-title: Test article deco
-description: test reverse
-author: dav
+title: Article décoration_2
+description: "Mon deuxième article sur la déco "
+author: David
 categorie: Décoration
 link: decoration
 date: 2022-10-27T03:19:13.251Z
