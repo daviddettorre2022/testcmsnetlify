@@ -1,5 +1,5 @@
 ---
-title: Article numérique num1
+title: Article numérique num2
 description: Mon Deuxième article numérique
 author: David
 categorie: Numérique
