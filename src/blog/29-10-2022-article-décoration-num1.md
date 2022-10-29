@@ -3,7 +3,7 @@ title: Article décoration num1
 description: Mon premier article
 author: David
 categorie: Décoration
-link: "decoration "
+link: decoration
 date: 2022-10-29T02:49:22.440Z
 tags:
   - blog
