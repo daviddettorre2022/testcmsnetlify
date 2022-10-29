@@ -3,7 +3,7 @@ title: Article décoration num2
 description: Mon deuxième article
 author: David
 categorie: Décoration
-link: "decoration "
+link: decoration
 date: 2022-10-29T02:59:43.736Z
 tags:
   - blog
