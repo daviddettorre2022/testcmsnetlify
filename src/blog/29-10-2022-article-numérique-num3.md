@@ -1,6 +1,6 @@
 ---
 title: Article numérique num3
-description: Mon premier troisième numérique
+description: Mon premier numérique
 author: David
 categorie: Numérique
 link: numerique
