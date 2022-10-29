@@ -1,5 +1,5 @@
 ---
-title: Article déco num1
+title: Article numérique num1
 description: Mon premier article numérique
 author: David
 categorie: Numérique
