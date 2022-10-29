@@ -8,7 +8,7 @@ date: 2022-10-29T02:45:25.855Z
 tags:
   - blog
   - architecture
-image: /assets/img/achitec1.jpg
+image: /assets/img/archit1.jpg
 imageAlt: Un immeuble.
 ---
 ## Lorem ipsum
