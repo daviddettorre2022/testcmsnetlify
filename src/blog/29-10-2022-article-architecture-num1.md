@@ -1,5 +1,5 @@
 ---
-title: Architecture num1
+title: Article architecture num1
 description: Premier article
 author: david
 categorie: Architecture
@@ -9,7 +9,7 @@ tags:
   - blog
   - architecture
 image: /assets/img/arch2.jpg
-imageAlt: Un bâtiment rose.
+imageAlt: Un bâtiment moderne.
 ---
 ## Lorem ipsum
 
