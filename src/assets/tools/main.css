@@ -39,12 +39,11 @@ a {
   background-color: var(--bg-cta);
 }
 small {
-  font-size: 0.825rem;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 900px) {
   main {
-    font-size: 1.5rem;
     padding: 1rem;
   }
 }
